@@ -15,8 +15,8 @@
   box-sizing: border-box;
   margin-inline: auto;
   max-width: 52rem;
-  min-height: min(100vh, 56rem);
-  padding: clamp(4rem, 12vw, 8rem) clamp(1.5rem, 5vw, 3.5rem);
+  min-height: min(100vh, 50rem);
+  padding: clamp(4rem, 10vw, 6rem) clamp(1.5rem, 5vw, 3.5rem);
   display: flex;
   align-items: center;
 }
