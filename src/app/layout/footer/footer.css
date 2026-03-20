@@ -1,0 +1,156 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid rgb(73 72 71 / 0.15);
+  background-color: #0e0e0e;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #adaaaa;
+}
+
+.footer__inner {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 2rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer__brand {
+    grid-column: span 1;
+  }
+}
+
+.footer__logo-text {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer__tagline {
+  margin: 0;
+  max-width: 22rem;
+  opacity: 0.8;
+  line-height: 1.65;
+}
+
+.footer__heading {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__list li + li {
+  margin-top: 1rem;
+}
+
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #fff;
+}
+
+.footer__bar {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-top: 1px solid rgb(73 72 71 / 0.1);
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer__bar {
+    flex-direction: row;
+  }
+}
+
+.footer__copy {
+  margin: 0;
+  opacity: 0.8;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .footer__copy {
+    text-align: left;
+  }
+}
+
+.footer__copy:hover {
+  opacity: 1;
+}
+
+.footer__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer__status-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__status-dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+}
+
+.footer__status-dot--cyan {
+  background-color: #00cffc;
+}
+
+.footer__status-dot--green {
+  background-color: #22c55e;
+}
+
+.footer__status-label {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #adaaaa;
+}
