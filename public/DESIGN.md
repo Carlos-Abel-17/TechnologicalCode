@@ -1,7 +1,7 @@
 # Design System Strategy: High-End Technological Noir
 
 ## 1. Overview & Creative North Star: "The Obsidian Pulse"
-This design system is engineered for **TechnogicalCode** to evoke a sense of high-end, futuristic precision. Our Creative North Star is **"The Obsidian Pulse"**—a concept where the interface feels like a living, breathing machine carved from dark matter. 
+This design system is engineered for **TechnologicalCode** to evoke a sense of high-end, futuristic precision. Our Creative North Star is **"The Obsidian Pulse"**—a concept where the interface feels like a living, breathing machine carved from dark matter. 
 
 We move away from the "flat" web by utilizing intentional asymmetry and tonal depth. By layering deep blacks and translucent glass surfaces, we create a UI that feels premium, like a high-performance cockpit or a luxury automotive interface (Tesla/Ravn). Success here is measured by the tension between the "Void" (Deep Black) and the "Pulse" (Electric Accents).
 

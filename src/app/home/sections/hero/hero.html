@@ -4,27 +4,28 @@
   <div class="hero__content">
     <p class="hero__badge">
       <span class="hero__badge-dot" aria-hidden="true"></span>
-      SYSTEM STATUS / OPTIMAL
+      {{ i18n.t('hero.badge') }}
     </p>
 
     <h1 id="hero-heading" class="hero__title">
-      We build software that
-      <span class="hero__title-accent">scales your business</span>
+      {{ i18n.t('hero.title.prefix') }}
+      <span class="hero__title-accent hero__title-accent--typed">
+        {{ typedLine() }}<span class="hero__cursor" aria-hidden="true"></span>
+      </span>
     </h1>
 
     <p class="hero__lead">
-      High-performance architectures, clean APIs, and interfaces that stay fast as you grow — from first deploy to
-      serious scale.
+      {{ i18n.t('hero.lead') }}
     </p>
 
     <div class="hero__actions">
-      <a class="hero__btn hero__btn--primary" href="#contact">START YOUR PROJECT</a>
-      <a class="hero__btn hero__btn--ghost" href="#portfolio">VIEW PORTFOLIO</a>
+      <a class="hero__btn hero__btn--primary" href="#contact">{{ i18n.t('hero.cta.primary') }}</a>
+      <!-- <a class="hero__btn hero__btn--ghost" href="#portfolio">{{ i18n.t('hero.cta.secondary') }}</a> -->
     </div>
   </div>
 
   <a class="hero__scroll" href="#services">
     <span class="hero__scroll-line" aria-hidden="true"></span>
-    <span class="hero__scroll-text">SCROLL DOWN</span>
+    <span class="hero__scroll-text">{{ i18n.t('hero.scroll') }}</span>
   </a>
 </section>

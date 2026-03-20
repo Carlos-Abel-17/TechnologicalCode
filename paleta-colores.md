@@ -1,4 +1,4 @@
-# 🎨 TechnogicalCode - Color Palette (Futuristic Dark Theme)
+# 🎨 TechnologicalCode - Color Palette (Futuristic Dark Theme)
 
 ---
 

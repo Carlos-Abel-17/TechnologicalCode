@@ -2,25 +2,25 @@
   <div class="competencies__inner">
     <header class="competencies__header">
       <div class="competencies__intro">
-        <h2 id="competencies-heading" class="competencies__title">Core Competencies</h2>
+        <h2 id="competencies-heading" class="competencies__title">{{ i18n.t('competencies.title') }}</h2>
         <div class="competencies__accent-bar" aria-hidden="true"></div>
         <p class="competencies__lead">
-          Precision-engineered modules designed to integrate seamlessly into high-stakes environments.
+          {{ i18n.t('competencies.lead') }}
         </p>
       </div>
-      <p class="competencies__index">Service Index 01-04</p>
+      <p class="competencies__index">{{ i18n.t('competencies.index') }}</p>
     </header>
 
     <div class="competencies__grid" role="list">
-      @for (item of items; track item.title) {
+      @for (item of items; track item.titleKey) {
         <article class="competencies__card" role="listitem">
           <div class="competencies__icon-wrap" aria-hidden="true">
             <span class="material-symbols-outlined competencies__icon">{{ item.icon }}</span>
           </div>
-          <h3 class="competencies__card-title">{{ item.title }}</h3>
-          <p class="competencies__card-text">{{ item.description }}</p>
+          <h3 class="competencies__card-title">{{ i18n.t(item.titleKey) }}</h3>
+          <p class="competencies__card-text">{{ i18n.t(item.descriptionKey) }}</p>
           <div class="competencies__card-action">
-            <span>{{ item.actionLabel }}</span>
+            <span>{{ i18n.t(item.actionKey) }}</span>
             <span class="material-symbols-outlined competencies__arrow" aria-hidden="true">arrow_forward</span>
           </div>
         </article>

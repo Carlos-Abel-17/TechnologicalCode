@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { I18nService } from '../../../i18n/i18n.service';
+import type { MessageKey } from '../../../i18n/translations';
 
 export interface CompetencyItem {
   icon: string;
-  title: string;
-  description: string;
-  actionLabel: string;
+  titleKey: MessageKey;
+  descriptionKey: MessageKey;
+  actionKey: MessageKey;
 }
 
 @Component({
@@ -14,34 +16,32 @@ export interface CompetencyItem {
   styleUrl: './core-competencies.css',
 })
 export class CoreCompetenciesSectionComponent {
+  protected readonly i18n = inject(I18nService);
+
   protected readonly items: CompetencyItem[] = [
     {
       icon: 'terminal',
-      title: 'Web Dev',
-      description:
-        'Full-stack architectures optimized for millisecond latency and extreme concurrency.',
-      actionLabel: 'Initialize',
+      titleKey: 'competencies.web.title',
+      descriptionKey: 'competencies.web.desc',
+      actionKey: 'competencies.web.action',
     },
     {
       icon: 'smart_toy',
-      title: 'Automation',
-      description:
-        'AI-driven workflows that eliminate operational bottlenecks with autonomous precision.',
-      actionLabel: 'Deploy',
+      titleKey: 'competencies.auto.title',
+      descriptionKey: 'competencies.auto.desc',
+      actionKey: 'competencies.auto.action',
     },
     {
       icon: 'hub',
-      title: 'API Design',
-      description:
-        'Robust integration layers built for secure, scalable communication between distributed systems.',
-      actionLabel: 'Connect',
+      titleKey: 'competencies.api.title',
+      descriptionKey: 'competencies.api.desc',
+      actionKey: 'competencies.api.action',
     },
     {
       icon: 'bolt',
-      title: 'Real-time Apps',
-      description:
-        'Bi-directional data streaming solutions for live financial, monitoring, and chat platforms.',
-      actionLabel: 'Sync',
+      titleKey: 'competencies.rt.title',
+      descriptionKey: 'competencies.rt.desc',
+      actionKey: 'competencies.rt.action',
     },
   ];
 }

@@ -4,17 +4,16 @@
   <div class="manifesto__inner">
     <div class="manifesto__grid">
       <div class="manifesto__column manifesto__column--headline">
-        <span class="manifesto__eyebrow">The Manifesto</span>
+        <span class="manifesto__eyebrow">{{ i18n.t('manifesto.eyebrow') }}</span>
         <h2 id="manifesto-heading" class="manifesto__title">
-          We build scalable, efficient, and
-          <span class="manifesto__title-muted">modern software solutions.</span>
+          {{ i18n.t('manifesto.title.line1') }}
+          <span class="manifesto__title-muted">{{ i18n.t('manifesto.title.muted') }}</span>
         </h2>
       </div>
 
       <div class="manifesto__column manifesto__column--body">
         <p class="manifesto__text">
-          At TechnogicalCode, we don't just write code; we architect technical legacies. Our approach treats every line
-          of software as a strategic asset.
+          {{ i18n.t('manifesto.body') }}
         </p>
 
         <div class="manifesto__stats" role="list">
@@ -28,7 +27,7 @@
             <div class="manifesto__stat-value">
               250<span class="manifesto__stat-suffix manifesto__stat-suffix--primary">+</span>
             </div>
-            <div class="manifesto__stat-label">Systems Deployed</div>
+            <div class="manifesto__stat-label">{{ i18n.t('manifesto.stat2') }}</div>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
   <div class="portfolio__inner">
     <header class="portfolio__header">
-      <span class="portfolio__eyebrow">Selected Works</span>
-      <h2 id="portfolio-heading" class="portfolio__title">Technological Milestones</h2>
+      <span class="portfolio__eyebrow">{{ i18n.t('portfolio.eyebrow') }}</span>
+      <h2 id="portfolio-heading" class="portfolio__title">{{ i18n.t('portfolio.title') }}</h2>
     </header>
 
     <div class="portfolio__list">
-      @for (project of projects; track project.title) {
+      @for (project of projects; track project.imageUrl) {
         <div class="portfolio__project">
           @if (project.layout === 'wide-left') {
             <div class="portfolio__grid portfolio__grid--wide-left">
@@ -14,7 +14,7 @@
                 <img
                   class="portfolio__img"
                   [src]="project.imageUrl"
-                  [alt]="project.imageAlt"
+                  [alt]="i18n.t(project.altKey)"
                   loading="lazy"
                   width="1600"
                   height="1000"
@@ -28,10 +28,10 @@
                 >
                   <div class="portfolio__card-meta">
                     <span class="portfolio__pulse" aria-hidden="true"></span>
-                    <span class="portfolio__category">{{ project.category }}</span>
+                    <span class="portfolio__category">{{ i18n.t(project.categoryKey) }}</span>
                   </div>
-                  <h3 class="portfolio__card-title">{{ project.title }}</h3>
-                  <p class="portfolio__card-desc">{{ project.description }}</p>
+                  <h3 class="portfolio__card-title">{{ i18n.t(project.titleKey) }}</h3>
+                  <p class="portfolio__card-desc">{{ i18n.t(project.descriptionKey) }}</p>
                   <div class="portfolio__tags">
                     @for (tag of project.tags; track tag) {
                       <span class="portfolio__tag">{{ tag }}</span>
@@ -46,7 +46,7 @@
                 <img
                   class="portfolio__img"
                   [src]="project.imageUrl"
-                  [alt]="project.imageAlt"
+                  [alt]="i18n.t(project.altKey)"
                   loading="lazy"
                   width="1600"
                   height="1000"
@@ -60,10 +60,10 @@
                 >
                   <div class="portfolio__card-meta">
                     <span class="portfolio__pulse" aria-hidden="true"></span>
-                    <span class="portfolio__category">{{ project.category }}</span>
+                    <span class="portfolio__category">{{ i18n.t(project.categoryKey) }}</span>
                   </div>
-                  <h3 class="portfolio__card-title">{{ project.title }}</h3>
-                  <p class="portfolio__card-desc">{{ project.description }}</p>
+                  <h3 class="portfolio__card-title">{{ i18n.t(project.titleKey) }}</h3>
+                  <p class="portfolio__card-desc">{{ i18n.t(project.descriptionKey) }}</p>
                   <div class="portfolio__tags">
                     @for (tag of project.tags; track tag) {
                       <span class="portfolio__tag">{{ tag }}</span>

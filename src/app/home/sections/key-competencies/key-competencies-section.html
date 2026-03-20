@@ -1,0 +1,43 @@
+<section
+  class="kc"
+  id="services"
+  [attr.aria-label]="i18n.t('keyCompetencies.aria')"
+>
+  <div class="kc__inner">
+    <div class="kc__stack">
+      <h2
+        class="kc__title"
+        [style.opacity]="titleOpacity()"
+        [style.transform]="'translate3d(0,' + titleLift() + 'px,0)'"
+      >
+        {{ titleText() }}<span
+          class="kc__caret"
+          [class.kc__caret--off]="caretPhase() !== 'title'"
+          aria-hidden="true"
+        ></span>
+      </h2>
+      <p
+        class="kc__lead"
+        [style.opacity]="leftOpacity()"
+        [style.transform]="'translate3d(0,' + leftLift() + 'px,0)'"
+      >
+        {{ leftBodyText() }}<span
+          class="kc__caret"
+          [class.kc__caret--off]="caretPhase() !== 'left'"
+          aria-hidden="true"
+        ></span>
+      </p>
+      <p
+        class="kc__aside"
+        [style.opacity]="rightOpacity()"
+        [style.transform]="'translate3d(0,' + rightLift() + 'px,0)'"
+      >
+        {{ rightBodyText() }}<span
+          class="kc__caret"
+          [class.kc__caret--off]="caretPhase() !== 'right'"
+          aria-hidden="true"
+        ></span>
+      </p>
+    </div>
+  </div>
+</section>

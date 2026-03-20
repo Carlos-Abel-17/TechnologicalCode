@@ -2,50 +2,50 @@
   <div class="footer__inner">
     <div class="footer__grid">
       <div class="footer__brand">
-        <div class="footer__logo-text">TechnogicalCode</div>
+        <div class="footer__logo-text">TechnologicalCode</div>
         <p class="footer__tagline">
-          High-end software engineering agency focused on obsidian-grade performance and architectural integrity.
+          {{ i18n.t('footer.tagline') }}
         </p>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">Sitemap</h4>
+        <h4 class="footer__heading">{{ i18n.t('footer.sitemap') }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#services">Services</a></li>
-          <li><a class="footer__link" href="#portfolio">Portfolio</a></li>
-          <li><a class="footer__link" href="#process">Process</a></li>
+          <li><a class="footer__link" href="#services">{{ i18n.t('footer.link.services') }}</a></li>
+          <li><a class="footer__link" href="#portfolio">{{ i18n.t('footer.link.portfolio') }}</a></li>
+          <li><a class="footer__link" href="#process">{{ i18n.t('footer.link.process') }}</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">Legal</h4>
+        <h4 class="footer__heading">{{ i18n.t('footer.legal') }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#">Terms</a></li>
-          <li><a class="footer__link" href="#">Privacy</a></li>
-          <li><a class="footer__link" href="#">Security</a></li>
+          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.terms') }}</a></li>
+          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.privacy') }}</a></li>
+          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.security') }}</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">Connection</h4>
+        <h4 class="footer__heading">{{ i18n.t('footer.connection') }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#">LinkedIn</a></li>
-          <li><a class="footer__link" href="#">GitHub</a></li>
-          <li><a class="footer__link" href="#contact">Contact</a></li>
+          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.linkedin') }}</a></li>
+          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.github') }}</a></li>
+          <li><a class="footer__link" href="#contact">{{ i18n.t('footer.link.contact') }}</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bar">
-      <p class="footer__copy">© 2024 TechnogicalCode. Engineered for the Obsidian Pulse.</p>
+      <p class="footer__copy">{{ i18n.t('footer.copy') }}</p>
       <div class="footer__status">
         <div class="footer__status-item">
           <span class="footer__status-dot footer__status-dot--cyan" aria-hidden="true"></span>
-          <span class="footer__status-label">Server: Frankfurt-01</span>
+          <span class="footer__status-label">{{ i18n.t('footer.status.server') }}</span>
         </div>
         <div class="footer__status-item">
           <span class="footer__status-dot footer__status-dot--green" aria-hidden="true"></span>
-          <span class="footer__status-label">Network: Secure</span>
+          <span class="footer__status-label">{{ i18n.t('footer.status.network') }}</span>
         </div>
       </div>
     </div>
