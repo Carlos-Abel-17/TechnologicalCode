@@ -39,15 +39,15 @@
     "cards": {
       "automation": {
         "title": "Automatización",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "Automatizamos procesos repetitivos para que tu negocio funcione sin fricción.\n\nDesde tareas operativas hasta flujos completos, reducimos errores, ahorramos tiempo\ny te permitimos enfocarte en lo que realmente importa: crecer."
       },
       "web": {
         "title": "Página web",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "Diseñamos y desarrollamos páginas web modernas, rápidas y enfocadas en conversión.\n\nNo solo se ven bien, están pensadas para atraer clientes,\ngenerar confianza y representar tu negocio al más alto nivel."
       },
       "internal": {
         "title": "Sistemas internos",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "Creamos sistemas personalizados que se adaptan a la forma en que trabajas.\n\nOrganiza tu información, optimiza tus procesos y toma decisiones\ncon herramientas diseñadas específicamente para tu negocio."
       }
     }
   },

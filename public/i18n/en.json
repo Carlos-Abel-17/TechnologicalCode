@@ -39,15 +39,15 @@
     "cards": {
       "automation": {
         "title": "Automation",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "We automate repetitive processes so your business runs without friction.\n\nFrom day-to-day tasks to full workflows, we reduce errors, save time,\nand let you focus on what really matters: growth."
       },
       "web": {
         "title": "Website",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "We design and build modern, fast websites focused on conversion.\n\nThey don’t just look good — they’re built to attract customers,\nbuild trust, and represent your business at the highest level."
       },
       "internal": {
         "title": "Internal systems",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+        "body": "We build tailored systems that fit how you actually work.\n\nOrganize your information, streamline your processes, and make decisions\nwith tools built specifically for your business."
       }
     }
   },
