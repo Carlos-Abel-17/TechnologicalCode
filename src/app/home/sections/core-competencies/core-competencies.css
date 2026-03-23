@@ -1,9 +1,9 @@
 .competencies {
   --expo-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --bg-section: #131313;
-  --bg-card: #201f1f;
-  --bg-icon: #262626;
-  --text-muted: #adaaaa;
+  --bg-section: var(--color-tc-comp-bg);
+  --bg-card: var(--color-tc-comp-card);
+  --bg-icon: var(--color-tc-comp-icon-bg);
+  --text-muted: var(--color-tc-comp-text-muted);
   --secondary: #00cffc;
   --secondary-muted: rgb(0 207 252 / 0.6);
 
@@ -48,7 +48,7 @@
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--color-tc-text);
 }
 
 .competencies__accent-bar {
@@ -148,7 +148,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--color-tc-text);
 }
 
 .competencies__card-text {

@@ -2,7 +2,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #0a0a0a;
+  /* Espacio para el header `position: fixed` (sigue visible al hacer scroll) */
+  padding-top: var(--header-bar-height);
+  background-color: var(--color-tc-bg);
 }
 
 .presentation__main {
@@ -11,10 +13,5 @@
   flex-direction: column;
 }
 
-/** Franja 10px a ancho completo entre hero y competencias (placeholder visual) */
-.presentation__ribbon {
-  flex-shrink: 0;
-  width: 100%;
-  height: 10px;
-  background-color: #ff0000;
-}
+/** Transición hero → competencias: franja de iconos en onda en la propia sección .kc */
+

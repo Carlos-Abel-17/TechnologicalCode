@@ -6,17 +6,20 @@
       <div class="final-cta__blob final-cta__blob--tl" aria-hidden="true"></div>
 
       <div class="final-cta__content">
-        <h2 id="final-cta-heading" class="final-cta__title">{{ i18n.t('cta.title') }}</h2>
+        <h2 id="final-cta-heading" class="final-cta__title">{{ 'cta.title' | translate }}</h2>
         <p class="final-cta__lead">
-          {{ i18n.t('cta.lead') }}
+          {{ 'cta.lead' | translate }}
         </p>
+
         <div class="final-cta__actions">
-          <a class="final-cta__btn final-cta__btn--primary" href="mailto:hq@technologicalcode.io">
-            {{ i18n.t('cta.primary') }}
+          <a
+            class="final-cta__btn final-cta__btn--whatsapp"
+            [href]="whatsappHref"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ 'cta.whatsapp' | translate }}
           </a>
-          <a class="final-cta__btn final-cta__btn--link" href="mailto:hq@technologicalcode.io">{{
-            i18n.t('cta.secondary')
-          }}</a>
         </div>
       </div>
     </div>

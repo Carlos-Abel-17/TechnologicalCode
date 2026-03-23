@@ -2,26 +2,209 @@
 
 @theme {
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --color-tc-bg: #0a0a0a;
-  --color-tc-surface: #121212;
-  --color-tc-card: #1f1f1f;
-  --color-tc-border: #2f2f2f;
-  --color-tc-muted: #9a9a9a;
-  --color-tc-secondary: #cfcfcf;
+  /* Valores por defecto = tema claro (también en :root abajo) */
+  --color-tc-bg: #f5f5f7;
+  --color-tc-text: #0a0a0a;
+  --color-tc-muted: #5c5c66;
+  --color-tc-surface: #ffffff;
+  --color-tc-surface-2: #ebecef;
+  --color-tc-card: #ececf0;
+  --color-tc-border: #d8d8de;
   --color-tc-accent-from: #7b61ff;
   --color-tc-accent-to: #00d1ff;
 }
 
+/* Tokens semánticos: claro por defecto */
+:root {
+  /* Altura de la barra fija (contenido); el padding de `.presentation` evita solapamiento */
+  --header-bar-height: 4.25rem;
+  --color-tc-bg: #f5f5f7;
+  --color-tc-text: #0a0a0a;
+  --color-tc-muted: #5c5c66;
+  --color-tc-muted-2: #6b6b76;
+  --color-tc-surface: #ffffff;
+  --color-tc-surface-2: #ebecef;
+  --color-tc-card: #ececf0;
+  --color-tc-border: #d8d8de;
+  --color-tc-border-subtle: rgb(0 0 0 / 0.08);
+  --color-tc-header-bg: rgb(255 255 255 / 0.92);
+  --color-tc-header-border: rgb(0 0 0 / 0.08);
+  --color-tc-link: #45454f;
+  --color-tc-link-hover: #0a0a0a;
+  --color-tc-hero-badge-bg: rgb(255 255 255 / 0.92);
+  --color-tc-hero-badge-border: rgb(0 0 0 / 0.12);
+  --color-tc-hero-lead: #5c5c66;
+  --color-tc-ghost-border: rgb(0 0 0 / 0.18);
+  --color-tc-ghost-hover-bg: rgb(0 0 0 / 0.05);
+  --color-tc-scroll: #8a8a92;
+  --color-tc-footer-bg: #ececee;
+  --color-tc-footer-text: #5a5a62;
+  --color-tc-footer-heading: #0a0a0a;
+  --color-tc-lang-bg: rgb(255 255 255 / 0.85);
+  --color-tc-lang-border: rgb(0 0 0 / 0.12);
+  --color-tc-lang-muted: #6b6b76;
+  --color-tc-lang-active-fg: #0a0a0a;
+  --color-tc-keycomp-bg: #f0f1f3;
+  --color-tc-keycomp-wave-border: rgb(10 10 10 / 0.06);
+  --color-tc-keycomp-dot: #e4e5e9;
+  --color-tc-keycomp-dot-fg: #0a0a0a;
+  --color-tc-keycomp-aside: #4a4a52;
+  --color-tc-portfolio-bg: #000000;
+  --color-tc-portfolio-media-bg: #d5d5db;
+  --color-tc-portfolio-card-bg: rgb(255 255 255 / 0.88);
+  /* Texto legible sobre fondo negro */
+  --color-tc-portfolio-text-muted: #c4c4cc;
+  --color-tc-portfolio-surface: #e4e4ea;
+  --color-tc-portfolio-border: rgb(0 0 0 / 0.1);
+  --color-tc-portfolio-title: #f5f5f7;
+  --color-tc-manifesto-bg: #f2f2f5;
+  --color-tc-manifesto-text-muted: #5a5a62;
+  --color-tc-manifesto-title-muted: #5a5a62;
+  --color-tc-final-bg: #ebebef;
+  --color-tc-final-card: #f5f5f8;
+  --color-tc-final-muted: #5a5a62;
+  --color-tc-final-link: #0a0a0a;
+  --color-tc-comp-bg: #efeff2;
+  --color-tc-comp-card: #f7f7fa;
+  --color-tc-comp-icon-bg: #e8e8ee;
+  --color-tc-comp-text-muted: #5a5a62;
+}
+
+html[data-theme='dark'] {
+  --color-tc-bg: #0a0a0a;
+  --color-tc-text: #ffffff;
+  --color-tc-muted: #9a9a9a;
+  --color-tc-muted-2: #6b6b6b;
+  --color-tc-surface: #121212;
+  --color-tc-surface-2: #1a1a1a;
+  --color-tc-card: #1f1f1f;
+  --color-tc-border: #2f2f2f;
+  --color-tc-border-subtle: rgb(255 255 255 / 0.08);
+  --color-tc-header-bg: rgb(10 10 10 / 0.85);
+  --color-tc-header-border: rgb(47 47 47 / 0.6);
+  --color-tc-link: #cfcfcf;
+  --color-tc-link-hover: #ffffff;
+  --color-tc-hero-badge-bg: rgb(18 18 18 / 0.8);
+  --color-tc-hero-badge-border: rgb(47 47 47);
+  --color-tc-hero-lead: #9a9a9a;
+  --color-tc-ghost-border: rgb(207 207 207 / 0.35);
+  --color-tc-ghost-hover-bg: rgb(31 31 31 / 0.6);
+  --color-tc-scroll: #6b6b6b;
+  --color-tc-footer-bg: #0e0e0e;
+  --color-tc-footer-text: #adaaaa;
+  --color-tc-footer-heading: #ffffff;
+  --color-tc-lang-bg: rgb(18 18 18 / 0.6);
+  --color-tc-lang-border: rgb(47 47 47 / 0.9);
+  --color-tc-lang-muted: #9a9a9a;
+  --color-tc-lang-active-fg: #0a0a0a;
+  --color-tc-keycomp-bg: #0a0a0a;
+  --color-tc-keycomp-wave-border: rgb(255 255 255 / 0.08);
+  --color-tc-keycomp-dot: #1c1c1c;
+  --color-tc-keycomp-dot-fg: #f5f5f5;
+  --color-tc-keycomp-aside: #cfcfcf;
+  --color-tc-portfolio-bg: #ffffff;
+  --color-tc-portfolio-media-bg: #262626;
+  --color-tc-portfolio-card-bg: rgb(38 38 38 / 0.6);
+  /* Texto legible sobre fondo blanco */
+  --color-tc-portfolio-text-muted: #5a5a62;
+  --color-tc-portfolio-surface: #1a1919;
+  --color-tc-portfolio-border: rgb(73 72 71 / 0.2);
+  --color-tc-portfolio-title: #0a0a0a;
+  --color-tc-manifesto-bg: #000000;
+  --color-tc-manifesto-text-muted: #adaaaa;
+  --color-tc-manifesto-title-muted: #adaaaa;
+  --color-tc-final-bg: #0e0e0e;
+  --color-tc-final-card: #201f1f;
+  --color-tc-final-muted: #adaaaa;
+  --color-tc-final-link: #ffffff;
+  --color-tc-comp-bg: #131313;
+  --color-tc-comp-card: #201f1f;
+  --color-tc-comp-icon-bg: #262626;
+  --color-tc-comp-text-muted: #adaaaa;
+}
+
 html {
   scroll-behavior: smooth;
-  /* Anclas (#services, etc.): el inicio del bloque queda bajo el header sticky */
-  scroll-padding-top: 5rem;
+  scroll-padding-top: calc(var(--header-bar-height) + 0.75rem);
 }
 
 body {
   margin: 0;
   font-family: var(--font-sans);
   background-color: var(--color-tc-bg);
-  color: #ffffff;
+  color: var(--color-tc-text);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Header sobre #portfolio: sólido negro (light) / blanco (dark); estilos globales por presupuesto del CSS del header */
+html[data-theme='light'] app-header .header.header--portfolio-zone {
+  border-bottom-color: rgb(255 255 255 / 0.12);
+  background: #000000;
+  box-shadow: none;
+  --color-tc-lang-border: rgb(255 255 255 / 0.22);
+  --color-tc-lang-bg: rgb(255 255 255 / 0.1);
+  --color-tc-lang-muted: #c4c4cc;
+  --color-tc-lang-active-fg: #0a0a0a;
+}
+
+html[data-theme='light'] app-header .header.header--portfolio-zone .header__brand {
+  color: #f5f5f7;
+}
+
+html[data-theme='light'] app-header .header.header--portfolio-zone .header__theme {
+  color: #e8e8e8;
+  border-color: rgb(255 255 255 / 0.28);
+  background: rgb(255 255 255 / 0.08);
+}
+
+html[data-theme='light'] app-header .header.header--portfolio-zone .header__theme:hover {
+  color: #ffffff;
+  border-color: rgb(255 255 255 / 0.45);
+}
+
+html[data-theme='dark'] app-header .header.header--portfolio-zone {
+  border-bottom-color: rgb(0 0 0 / 0.08);
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
+  --color-tc-lang-border: rgb(0 0 0 / 0.12);
+  --color-tc-lang-bg: rgb(0 0 0 / 0.05);
+  --color-tc-lang-muted: #6b6b76;
+  --color-tc-lang-active-fg: #0a0a0a;
+}
+
+html[data-theme='dark'] app-header .header.header--portfolio-zone .header__brand {
+  color: #0a0a0a;
+}
+
+html[data-theme='dark'] app-header .header.header--portfolio-zone .header__theme {
+  color: #3a3a42;
+  border-color: rgb(0 0 0 / 0.14);
+  background: rgb(0 0 0 / 0.04);
+}
+
+html[data-theme='dark'] app-header .header.header--portfolio-zone .header__theme:hover {
+  color: #0a0a0a;
+  border-color: rgb(0 0 0 / 0.22);
+}
+
+/* Portfolio: bloque estático tras autoescrito (presupuesto CSS del componente) */
+app-portfolio-section .portfolio__showcase {
+  opacity: 0;
+  transform: translate3d(0, 1.25rem, 0);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+app-portfolio-section .portfolio__showcase.portfolio__showcase--visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  app-portfolio-section .portfolio__showcase {
+    transition: none;
+  }
 }

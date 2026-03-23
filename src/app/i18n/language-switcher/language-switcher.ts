@@ -1,17 +1,28 @@
 import { Component, inject } from '@angular/core';
-import { I18nService } from '../i18n.service';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { ActiveLanguage } from '../../locale/active-language';
 import type { Lang } from '../translations';
 
 @Component({
   selector: 'app-language-switcher',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './language-switcher.html',
   styleUrl: './language-switcher.css',
 })
 export class LanguageSwitcherComponent {
-  protected readonly i18n = inject(I18nService);
+  private readonly translate = inject(TranslateService);
+  protected readonly active = inject(ActiveLanguage);
+
+  private static readonly STORAGE_KEY = 'tc-lang';
 
   protected selectLang(lang: Lang): void {
-    this.i18n.setLang(lang);
+    this.translate.use(lang).subscribe(() => {
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem(LanguageSwitcherComponent.STORAGE_KEY, lang);
+      }
+      if (typeof document !== 'undefined') {
+        document.documentElement.lang = lang;
+      }
+    });
   }
 }

@@ -5,6 +5,7 @@ import { HeaderComponent } from '../layout/header/header';
 import { HeroSectionComponent } from './sections/hero/hero';
 import { KeyCompetenciesSectionComponent } from './sections/key-competencies/key-competencies-section';
 import { FinalCtaSectionComponent } from './sections/final-cta/final-cta';
+import { GanchoSectionComponent } from './sections/gancho/gancho';
 import { ManifestoSectionComponent } from './sections/manifesto/manifesto';
 import { PortfolioSectionComponent } from './sections/portfolio/portfolio';
 
@@ -18,6 +19,7 @@ import { PortfolioSectionComponent } from './sections/portfolio/portfolio';
     // CoreCompetenciesSectionComponent,
     PortfolioSectionComponent,
     ManifestoSectionComponent,
+    GanchoSectionComponent,
     FinalCtaSectionComponent,
     FooterComponent,
   ],

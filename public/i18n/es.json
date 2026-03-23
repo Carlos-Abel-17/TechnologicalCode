@@ -1,0 +1,160 @@
+{
+  "header": {
+    "brandAria": "TechnologicalCode — inicio",
+    "nav": {
+      "services": "SERVICIOS",
+      "portfolio": "PORTAFOLIO",
+      "process": "PROCESO"
+    },
+    "cta": "COMENZAR",
+    "lang": { "label": "Idioma" },
+    "theme": {
+      "light": "Cambiar a tema claro",
+      "dark": "Cambiar a tema oscuro"
+    }
+  },
+  "hero": {
+    "badge": "ESTADO DEL SISTEMA / ÓPTIMO",
+    "title": { "prefix": "Construimos software que" },
+    "lead": "La innovación se une al propósito. La tecnología debe empoderarte, no frenarte.",
+    "cta": {
+      "primary": "INICIA TU PROYECTO",
+      "secondary": "VER PORTAFOLIO"
+    },
+    "scroll": "DESPLAZA"
+  },
+  "keyCompetencies": {
+    "title": "COMPETENCIAS CLAVE",
+    "leftBody": {
+      "parts": [
+        { "text": "En un mundo que evoluciona cada segundo, avanzar con la " },
+        { "text": "tecnología", "accent": "1" },
+        { "text": " ya no es opcional es una " },
+        { "text": "necesidad", "accent": "1" }
+      ]
+    },
+    "rightBody": "Por eso existe TechnologicalCode: para impulsar negocios modernos.",
+    "aria": "Narrativa de competencias clave",
+    "cardsRegion": "Servicios que ofrecemos",
+    "cards": {
+      "automation": {
+        "title": "Automatización",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      },
+      "web": {
+        "title": "Página web",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      },
+      "internal": {
+        "title": "Sistemas internos",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      }
+    }
+  },
+  "competencies": {
+    "title": "Competencias clave",
+    "lead": "Módulos diseñados con precisión para integrarse sin fricción en entornos de alto riesgo.",
+    "index": "Índice de servicios 01-04",
+    "web": {
+      "title": "Desarrollo web",
+      "desc": "Arquitecturas full stack optimizadas para latencia en milisegundos y concurrencia extrema.",
+      "action": "Inicializar"
+    },
+    "auto": {
+      "title": "Automatización",
+      "desc": "Flujos impulsados por IA que eliminan cuellos de botella operativos con precisión autónoma.",
+      "action": "Desplegar"
+    },
+    "api": {
+      "title": "Diseño de APIs",
+      "desc": "Capas de integración sólidas para comunicación segura y escalable entre sistemas distribuidos.",
+      "action": "Conectar"
+    },
+    "rt": {
+      "title": "Apps en tiempo real",
+      "desc": "Streaming bidireccional para finanzas en vivo, monitorización y plataformas de chat.",
+      "action": "Sincronizar"
+    }
+  },
+  "portfolio": {
+    "aria": "Sistemas internos y escalabilidad",
+    "leftBody": {
+      "parts": [
+        { "text": "Sistemas internos con estructuras " },
+        { "text": "modernas", "accent": "1" },
+        { "text": " y " },
+        { "text": "escalabilidad", "accent": "1" }
+      ]
+    },
+    "rightBody": "Todo lo que tu negocio necesita para explotar",
+    "showcase": {
+      "title": "Con modelos modernos y futurísticos",
+      "subtitle": "Para mayor facilidad de interacción",
+      "cta": "Contáctame",
+      "note": "Mantén los ojos en tu negocio desde donde estés",
+      "collageImgAlt": "Vista de panel y métricas"
+    }
+  },
+  "manifesto": {
+    "aria": "Manifiesto",
+    "imgAlt": "Inteligencia artificial aplicada al negocio",
+    "title": {
+      "parts": [
+        { "text": "Con " },
+        { "text": "la evolución de la IA", "accent": "1" },
+        { "text": " es momento de que " },
+        { "text": "tu negocio", "accent": "1" },
+        { "text": " también " },
+        { "text": "evolucione", "accent": "1" },
+        { "text": "." }
+      ]
+    },
+    "body": {
+      "parts": [
+        { "text": "Mejora el " },
+        { "text": "rendimiento", "accent": "1" },
+        { "text": " de tu negocio con ayuda de la " },
+        { "text": "IA", "accent": "1" },
+        { "text": " !TRABAJEMOS JUNTOS!" }
+      ]
+    },
+    "cta": "Contáctame"
+  },
+  "hook": {
+    "aria": "Sección gancho",
+    "text": {
+      "parts": [
+        { "text": "Trabaja con nosotros con " },
+        { "text": "distintas formas de pago", "accent": "1" },
+        { "text": " para nuestra variedad de servicios." }
+      ]
+    }
+  },
+  "cta": {
+    "title": "Construyamos algo potente",
+    "lead": "¿Listo para iniciar tu próximo proyecto? Escríbenos por WhatsApp.",
+    "whatsapp": "Contactar por WhatsApp"
+  },
+  "footer": {
+    "tagline": "Agencia de ingeniería de software de alto nivel, enfocada en rendimiento obsidiana e integridad arquitectónica.",
+    "sitemap": "Mapa del sitio",
+    "legal": "Legal",
+    "connection": "Conexión",
+    "link": {
+      "services": "Servicios",
+      "portfolio": "Portafolio",
+      "process": "Proceso",
+      "terms": "Términos",
+      "privacy": "Privacidad",
+      "security": "Seguridad",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "contact": "Contacto"
+    },
+    "copy": "© 2024 TechnologicalCode. Diseñado para el pulso obsidiano.",
+    "status": {
+      "server": "Servidor: Frankfurt-01",
+      "network": "Red: segura"
+    }
+  }
+}

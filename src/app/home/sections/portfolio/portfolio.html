@@ -1,80 +1,98 @@
-<section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+<section
+  #portfolioSection
+  class="portfolio"
+  [attr.aria-label]="'portfolio.aria' | translate"
+  id="portfolio"
+>
   <div class="portfolio__inner">
-    <header class="portfolio__header">
-      <span class="portfolio__eyebrow">{{ i18n.t('portfolio.eyebrow') }}</span>
-      <h2 id="portfolio-heading" class="portfolio__title">{{ i18n.t('portfolio.title') }}</h2>
-    </header>
+    <!-- #portfolioTypewriter: el IntersectionObserver usa solo este bloque para arrancar el autoescrito -->
+    <div #portfolioTypewriter class="portfolio__intro">
+      <div class="portfolio__stack">
+      <p
+        class="portfolio__lead"
+        [style.opacity]="leftOpacity()"
+        [style.transform]="'translate3d(0,' + leftLift() + 'px,0)'"
+      >
+        @for (seg of leftBodySegments(); track $index) {
+          <span [class.portfolio__lead-accent]="seg.accent">{{ seg.text }}</span>
+        }<span
+          class="portfolio__caret"
+          [class.portfolio__caret--off]="caretPhase() !== 'left'"
+          aria-hidden="true"
+        ></span>
+      </p>
+      <p
+        class="portfolio__subtitle"
+        [style.opacity]="rightOpacity()"
+        [style.transform]="'translate3d(0,' + rightLift() + 'px,0)'"
+      >
+        {{ rightBodyText() }}<span
+          class="portfolio__caret"
+          [class.portfolio__caret--off]="caretPhase() !== 'right'"
+          aria-hidden="true"
+        ></span>
+      </p>
+      </div>
+    </div>
 
-    <div class="portfolio__list">
-      @for (project of projects; track project.imageUrl) {
-        <div class="portfolio__project">
-          @if (project.layout === 'wide-left') {
-            <div class="portfolio__grid portfolio__grid--wide-left">
-              <div class="portfolio__media portfolio__media--wide">
-                <img
-                  class="portfolio__img"
-                  [src]="project.imageUrl"
-                  [alt]="i18n.t(project.altKey)"
-                  loading="lazy"
-                  width="1600"
-                  height="1000"
-                />
-              </div>
-              <div class="portfolio__panel-wrap portfolio__panel-wrap--pull-left">
-                <article
-                  class="portfolio__card"
-                  [class.portfolio__card--primary]="project.accent === 'primary'"
-                  [class.portfolio__card--secondary]="project.accent === 'secondary'"
-                >
-                  <div class="portfolio__card-meta">
-                    <span class="portfolio__pulse" aria-hidden="true"></span>
-                    <span class="portfolio__category">{{ i18n.t(project.categoryKey) }}</span>
-                  </div>
-                  <h3 class="portfolio__card-title">{{ i18n.t(project.titleKey) }}</h3>
-                  <p class="portfolio__card-desc">{{ i18n.t(project.descriptionKey) }}</p>
-                  <div class="portfolio__tags">
-                    @for (tag of project.tags; track tag) {
-                      <span class="portfolio__tag">{{ tag }}</span>
-                    }
-                  </div>
-                </article>
-              </div>
-            </div>
-          } @else {
-            <div class="portfolio__grid portfolio__grid--equal-right">
-              <div class="portfolio__media portfolio__media--equal portfolio__media--order-end">
-                <img
-                  class="portfolio__img"
-                  [src]="project.imageUrl"
-                  [alt]="i18n.t(project.altKey)"
-                  loading="lazy"
-                  width="1600"
-                  height="1000"
-                />
-              </div>
-              <div class="portfolio__panel-wrap portfolio__panel-wrap--pull-right portfolio__panel-wrap--order-start">
-                <article
-                  class="portfolio__card"
-                  [class.portfolio__card--primary]="project.accent === 'primary'"
-                  [class.portfolio__card--secondary]="project.accent === 'secondary'"
-                >
-                  <div class="portfolio__card-meta">
-                    <span class="portfolio__pulse" aria-hidden="true"></span>
-                    <span class="portfolio__category">{{ i18n.t(project.categoryKey) }}</span>
-                  </div>
-                  <h3 class="portfolio__card-title">{{ i18n.t(project.titleKey) }}</h3>
-                  <p class="portfolio__card-desc">{{ i18n.t(project.descriptionKey) }}</p>
-                  <div class="portfolio__tags">
-                    @for (tag of project.tags; track tag) {
-                      <span class="portfolio__tag">{{ tag }}</span>
-                    }
-                  </div>
-                </article>
-              </div>
-            </div>
-          }
-        </div>
-      }
+    <div
+      class="portfolio__showcase"
+      [class.portfolio__showcase--visible]="staticContentVisible()"
+      [attr.aria-hidden]="staticContentVisible() ? null : 'true'"
+    >
+      <div class="portfolio__showcase-copy">
+        <h2 class="portfolio__showcase-title">{{ 'portfolio.showcase.title' | translate }}</h2>
+        <p class="portfolio__showcase-subtitle">{{ 'portfolio.showcase.subtitle' | translate }}</p>
+        <a class="portfolio__cta" href="#contact">{{ 'portfolio.showcase.cta' | translate }}</a>
+        <p class="portfolio__showcase-note">{{ 'portfolio.showcase.note' | translate }}</p>
+      </div>
+      <div class="portfolio__collage" role="group" [attr.aria-label]="'portfolio.showcase.collageImgAlt' | translate">
+        <img
+          class="portfolio__collage-item portfolio__collage-item--1"
+          src="/imgTemplatedsh/dashImg-1.jpg"
+          alt=""
+          width="800"
+          height="500"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="portfolio__collage-item portfolio__collage-item--2"
+          src="/imgTemplatedsh/dshImg-2.png"
+          alt=""
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="portfolio__collage-item portfolio__collage-item--3"
+          src="/imgTemplatedsh/dshImg-3.png"
+          alt=""
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="portfolio__collage-item portfolio__collage-item--4"
+          src="/imgTemplatedsh/dshImg-4.png"
+          alt=""
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="portfolio__collage-item portfolio__collage-item--5"
+          src="/imgTemplatedsh/dshImg-5.webp"
+          alt=""
+          width="600"
+          height="400"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
     </div>
   </div>
 </section>

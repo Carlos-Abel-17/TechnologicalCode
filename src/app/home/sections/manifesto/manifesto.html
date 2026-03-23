@@ -1,36 +1,48 @@
-<section class="manifesto" id="process" aria-labelledby="manifesto-heading">
+<section
+  class="manifesto"
+  id="process"
+  [attr.aria-label]="'manifesto.aria' | translate"
+  aria-labelledby="manifesto-heading"
+>
   <div class="manifesto__glow" aria-hidden="true"></div>
 
   <div class="manifesto__inner">
-    <div class="manifesto__grid">
-      <div class="manifesto__column manifesto__column--headline">
-        <span class="manifesto__eyebrow">{{ i18n.t('manifesto.eyebrow') }}</span>
-        <h2 id="manifesto-heading" class="manifesto__title">
-          {{ i18n.t('manifesto.title.line1') }}
-          <span class="manifesto__title-muted">{{ i18n.t('manifesto.title.muted') }}</span>
-        </h2>
-      </div>
+    <div #manifestoTypewriter class="manifesto__typewriter">
+      <h2 id="manifesto-heading" class="manifesto__title">
+        @for (seg of titleSegments(); track $index) {
+          <span [class.manifesto__accent]="seg.accent">{{ seg.text }}</span>
+        }<span
+          class="manifesto__caret"
+          [class.manifesto__caret--off]="!caretVisible()"
+          aria-hidden="true"
+        ></span>
+      </h2>
+    </div>
 
-      <div class="manifesto__column manifesto__column--body">
-        <p class="manifesto__text">
-          {{ i18n.t('manifesto.body') }}
-        </p>
-
-        <div class="manifesto__stats" role="list">
-          <div class="manifesto__stat" role="listitem">
-            <div class="manifesto__stat-value">
-              99.9<span class="manifesto__stat-suffix manifesto__stat-suffix--secondary">%</span>
-            </div>
-            <div class="manifesto__stat-label">Uptime SLA</div>
-          </div>
-          <div class="manifesto__stat" role="listitem">
-            <div class="manifesto__stat-value">
-              250<span class="manifesto__stat-suffix manifesto__stat-suffix--primary">+</span>
-            </div>
-            <div class="manifesto__stat-label">{{ i18n.t('manifesto.stat2') }}</div>
-          </div>
+    <div
+      class="manifesto__row"
+      [class.manifesto__row--visible]="staticBlockVisible()"
+      [attr.aria-hidden]="staticBlockVisible() ? null : 'true'"
+    >
+      <div class="manifesto__media">
+        <div class="manifesto__media-inner">
+          <img
+            class="manifesto__img"
+            src="/imgIA/ia-1.webp"
+            width="960"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            [attr.alt]="'manifesto.imgAlt' | translate"
+          />
         </div>
+        <a class="manifesto__cta" href="#contact">{{ 'manifesto.cta' | translate }}</a>
       </div>
+      <p class="manifesto__body">
+        @for (part of bodyParts(); track $index) {
+          <span [class.manifesto__accent]="isAccentPart(part)">{{ part.text }}</span>
+        }
+      </p>
     </div>
   </div>
 </section>

@@ -1,0 +1,9 @@
+<section #ganchoSection class="gancho" id="hook" [attr.aria-label]="'hook.aria' | translate">
+  <div class="gancho__inner">
+    <p class="gancho__text">
+      @for (part of textParts(); track $index) {
+        <span [class.gancho__accent]="isAccentPart(part)">{{ part.text }}</span>
+      }
+    </p>
+  </div>
+</section>

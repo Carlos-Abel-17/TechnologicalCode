@@ -1,23 +1,20 @@
-import { Component, inject } from '@angular/core';
-import { I18nService } from '../../../i18n/i18n.service';
-import type { MessageKey } from '../../../i18n/translations';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 export interface CompetencyItem {
   icon: string;
-  titleKey: MessageKey;
-  descriptionKey: MessageKey;
-  actionKey: MessageKey;
+  titleKey: string;
+  descriptionKey: string;
+  actionKey: string;
 }
 
 @Component({
   selector: 'app-core-competencies-section',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './core-competencies.html',
   styleUrl: './core-competencies.css',
 })
 export class CoreCompetenciesSectionComponent {
-  protected readonly i18n = inject(I18nService);
-
   protected readonly items: CompetencyItem[] = [
     {
       icon: 'terminal',

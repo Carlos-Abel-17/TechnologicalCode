@@ -1,12 +1,21 @@
-import { Component, inject } from '@angular/core';
-import { I18nService } from '../../i18n/i18n.service';
+import { Component, computed, inject } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { ThemeService } from '../../theme/theme.service';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  standalone: true,
+  imports: [TranslatePipe],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
 export class FooterComponent {
-  protected readonly i18n = inject(I18nService);
+  private readonly theme = inject(ThemeService);
+
+  /** Misma lógica que el header (sin zona portfolio): claro → logo oscuro, oscuro → logo claro */
+  protected readonly footerLogoSrc = computed(() =>
+    this.theme.theme() === 'dark'
+      ? 'image-logo/logo_blanco_sin_fondo.png'
+      : 'image-logo/logo_negro_sin_fondo.png',
+  );
 }

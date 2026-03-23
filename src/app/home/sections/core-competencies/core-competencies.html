@@ -2,13 +2,13 @@
   <div class="competencies__inner">
     <header class="competencies__header">
       <div class="competencies__intro">
-        <h2 id="competencies-heading" class="competencies__title">{{ i18n.t('competencies.title') }}</h2>
+        <h2 id="competencies-heading" class="competencies__title">{{ 'competencies.title' | translate }}</h2>
         <div class="competencies__accent-bar" aria-hidden="true"></div>
         <p class="competencies__lead">
-          {{ i18n.t('competencies.lead') }}
+          {{ 'competencies.lead' | translate }}
         </p>
       </div>
-      <p class="competencies__index">{{ i18n.t('competencies.index') }}</p>
+      <p class="competencies__index">{{ 'competencies.index' | translate }}</p>
     </header>
 
     <div class="competencies__grid" role="list">
@@ -17,10 +17,10 @@
           <div class="competencies__icon-wrap" aria-hidden="true">
             <span class="material-symbols-outlined competencies__icon">{{ item.icon }}</span>
           </div>
-          <h3 class="competencies__card-title">{{ i18n.t(item.titleKey) }}</h3>
-          <p class="competencies__card-text">{{ i18n.t(item.descriptionKey) }}</p>
+          <h3 class="competencies__card-title">{{ item.titleKey | translate }}</h3>
+          <p class="competencies__card-text">{{ item.descriptionKey | translate }}</p>
           <div class="competencies__card-action">
-            <span>{{ i18n.t(item.actionKey) }}</span>
+            <span>{{ item.actionKey | translate }}</span>
             <span class="material-symbols-outlined competencies__arrow" aria-hidden="true">arrow_forward</span>
           </div>
         </article>

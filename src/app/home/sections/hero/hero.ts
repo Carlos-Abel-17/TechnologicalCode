@@ -1,18 +1,19 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, DestroyRef, effect, inject, PLATFORM_ID, signal } from '@angular/core';
-import { I18nService } from '../../../i18n/i18n.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { ActiveLanguage } from '../../../locale/active-language';
 import { getHeroPhrases, type HeroPhraseOptionIndex } from '../../../i18n/translations';
 
 type Phase = 'typing' | 'pause' | 'deleting';
 
 @Component({
   selector: 'app-hero-section',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
 export class HeroSectionComponent {
-  protected readonly i18n = inject(I18nService);
+  protected readonly activeLang = inject(ActiveLanguage);
 
   /**
    * 0 = natural · 1 = startup · 2 = tech.
@@ -30,7 +31,7 @@ export class HeroSectionComponent {
 
   constructor() {
     effect(() => {
-      this.i18n.lang();
+      this.activeLang.code();
       if (!isPlatformBrowser(this.platformId)) {
         return;
       }
@@ -62,7 +63,7 @@ export class HeroSectionComponent {
   }
 
   private getPhrases(): readonly string[] {
-    return getHeroPhrases(this.i18n.lang(), this.phraseOptionIndex);
+    return getHeroPhrases(this.activeLang.code(), this.phraseOptionIndex);
   }
 
   private step(): void {

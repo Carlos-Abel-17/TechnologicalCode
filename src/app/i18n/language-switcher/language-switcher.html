@@ -1,19 +1,19 @@
-<div class="lang" role="group" [attr.aria-label]="i18n.t('header.lang.label')">
+<div class="lang" role="group" [attr.aria-label]="'header.lang.label' | translate">
   <button
     type="button"
     class="lang__btn"
-    [class.lang__btn--active]="i18n.lang() === 'es'"
+    [class.lang__btn--active]="active.code() === 'es'"
     (click)="selectLang('es')"
-    [attr.aria-pressed]="i18n.lang() === 'es'"
+    [attr.aria-pressed]="active.code() === 'es'"
   >
     ES
   </button>
   <button
     type="button"
     class="lang__btn"
-    [class.lang__btn--active]="i18n.lang() === 'en'"
+    [class.lang__btn--active]="active.code() === 'en'"
     (click)="selectLang('en')"
-    [attr.aria-pressed]="i18n.lang() === 'en'"
+    [attr.aria-pressed]="active.code() === 'en'"
   >
     EN
   </button>

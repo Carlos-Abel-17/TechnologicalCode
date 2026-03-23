@@ -1,12 +1,15 @@
-import { Component, inject } from '@angular/core';
-import { I18nService } from '../../../i18n/i18n.service';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+
+const WHATSAPP_E164 = '51983446294';
 
 @Component({
   selector: 'app-final-cta-section',
-  imports: [],
+  standalone: true,
+  imports: [TranslatePipe],
   templateUrl: './final-cta.html',
   styleUrl: './final-cta.css',
 })
 export class FinalCtaSectionComponent {
-  protected readonly i18n = inject(I18nService);
+  protected readonly whatsappHref = `https://wa.me/${WHATSAPP_E164}`;
 }

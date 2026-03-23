@@ -1,51 +1,61 @@
 <footer class="footer">
   <div class="footer__inner">
+    <img
+      class="footer__logo-watermark"
+      [src]="footerLogoSrc()"
+      width="320"
+      height="320"
+      alt=""
+      decoding="async"
+      aria-hidden="true"
+    />
+
     <div class="footer__grid">
       <div class="footer__brand">
         <div class="footer__logo-text">TechnologicalCode</div>
         <p class="footer__tagline">
-          {{ i18n.t('footer.tagline') }}
+          {{ 'footer.tagline' | translate }}
         </p>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">{{ i18n.t('footer.sitemap') }}</h4>
+        <h4 class="footer__heading">{{ 'footer.sitemap' | translate }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#services">{{ i18n.t('footer.link.services') }}</a></li>
-          <li><a class="footer__link" href="#portfolio">{{ i18n.t('footer.link.portfolio') }}</a></li>
-          <li><a class="footer__link" href="#process">{{ i18n.t('footer.link.process') }}</a></li>
+          <li><a class="footer__link" href="#services">{{ 'footer.link.services' | translate }}</a></li>
+          <li><a class="footer__link" href="#portfolio">{{ 'footer.link.portfolio' | translate }}</a></li>
+          <li><a class="footer__link" href="#process">{{ 'footer.link.process' | translate }}</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">{{ i18n.t('footer.legal') }}</h4>
+        <h4 class="footer__heading">{{ 'footer.legal' | translate }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.terms') }}</a></li>
-          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.privacy') }}</a></li>
-          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.security') }}</a></li>
+          <li><a class="footer__link" href="#">{{ 'footer.link.terms' | translate }}</a></li>
+          <li><a class="footer__link" href="#">{{ 'footer.link.privacy' | translate }}</a></li>
+          <li><a class="footer__link" href="#">{{ 'footer.link.security' | translate }}</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4 class="footer__heading">{{ i18n.t('footer.connection') }}</h4>
+        <h4 class="footer__heading">{{ 'footer.connection' | translate }}</h4>
         <ul class="footer__list">
-          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.linkedin') }}</a></li>
-          <li><a class="footer__link" href="#">{{ i18n.t('footer.link.github') }}</a></li>
-          <li><a class="footer__link" href="#contact">{{ i18n.t('footer.link.contact') }}</a></li>
+          <li><a class="footer__link" href="#">{{ 'footer.link.linkedin' | translate }}</a></li>
+          <li><a class="footer__link" href="#">{{ 'footer.link.github' | translate }}</a></li>
+          <li><a class="footer__link" href="#contact">{{ 'footer.link.contact' | translate }}</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bar">
-      <p class="footer__copy">{{ i18n.t('footer.copy') }}</p>
+      <p class="footer__copy">{{ 'footer.copy' | translate }}</p>
       <div class="footer__status">
         <div class="footer__status-item">
           <span class="footer__status-dot footer__status-dot--cyan" aria-hidden="true"></span>
-          <span class="footer__status-label">{{ i18n.t('footer.status.server') }}</span>
+          <span class="footer__status-label">{{ 'footer.status.server' | translate }}</span>
         </div>
         <div class="footer__status-item">
           <span class="footer__status-dot footer__status-dot--green" aria-hidden="true"></span>
-          <span class="footer__status-label">{{ i18n.t('footer.status.network') }}</span>
+          <span class="footer__status-label">{{ 'footer.status.network' | translate }}</span>
         </div>
       </div>
     </div>

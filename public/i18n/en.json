@@ -1,0 +1,160 @@
+{
+  "header": {
+    "brandAria": "TechnologicalCode — home",
+    "nav": {
+      "services": "SERVICES",
+      "portfolio": "PORTFOLIO",
+      "process": "PROCESS"
+    },
+    "cta": "GET STARTED",
+    "lang": { "label": "Language" },
+    "theme": {
+      "light": "Switch to light theme",
+      "dark": "Switch to dark theme"
+    }
+  },
+  "hero": {
+    "badge": "SYSTEM STATUS / OPTIMAL",
+    "title": { "prefix": "We build software that" },
+    "lead": "Innovation meets purpose. Technology should empower you, not hold you back.",
+    "cta": {
+      "primary": "START YOUR PROJECT",
+      "secondary": "VIEW PORTFOLIO"
+    },
+    "scroll": "SCROLL DOWN"
+  },
+  "keyCompetencies": {
+    "title": "KEY COMPETENCIES",
+    "leftBody": {
+      "parts": [
+        { "text": "In a world that evolves every second, moving forward with " },
+        { "text": "technology", "accent": "1" },
+        { "text": " is no longer optional — it is a " },
+        { "text": "necessity", "accent": "1" }
+      ]
+    },
+    "rightBody": "That's why TechnologicalCode exists: to empower modern businesses.",
+    "aria": "Key competencies narrative",
+    "cardsRegion": "Services we offer",
+    "cards": {
+      "automation": {
+        "title": "Automation",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      },
+      "web": {
+        "title": "Website",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      },
+      "internal": {
+        "title": "Internal systems",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum."
+      }
+    }
+  },
+  "competencies": {
+    "title": "Core Competencies",
+    "lead": "Precision-engineered modules designed to integrate seamlessly into high-stakes environments.",
+    "index": "Service Index 01-04",
+    "web": {
+      "title": "Web Dev",
+      "desc": "Full-stack architectures optimized for millisecond latency and extreme concurrency.",
+      "action": "Initialize"
+    },
+    "auto": {
+      "title": "Automation",
+      "desc": "AI-driven workflows that eliminate operational bottlenecks with autonomous precision.",
+      "action": "Deploy"
+    },
+    "api": {
+      "title": "API Design",
+      "desc": "Robust integration layers built for secure, scalable communication between distributed systems.",
+      "action": "Connect"
+    },
+    "rt": {
+      "title": "Real-time Apps",
+      "desc": "Bi-directional data streaming solutions for live financial, monitoring, and chat platforms.",
+      "action": "Sync"
+    }
+  },
+  "portfolio": {
+    "aria": "Internal systems and scalability",
+    "leftBody": {
+      "parts": [
+        { "text": "Internal systems with " },
+        { "text": "modern", "accent": "1" },
+        { "text": " structures and " },
+        { "text": "scalability", "accent": "1" }
+      ]
+    },
+    "rightBody": "Everything your business needs to take off",
+    "showcase": {
+      "title": "With modern, futuristic models",
+      "subtitle": "For easier interaction",
+      "cta": "Contact me",
+      "note": "Keep your eyes on your business from anywhere",
+      "collageImgAlt": "Dashboard and metrics preview"
+    }
+  },
+  "manifesto": {
+    "aria": "Manifesto",
+    "imgAlt": "Artificial intelligence applied to your business",
+    "title": {
+      "parts": [
+        { "text": "With " },
+        { "text": "the evolution of AI", "accent": "1" },
+        { "text": ", it's time for " },
+        { "text": "your business", "accent": "1" },
+        { "text": " to " },
+        { "text": "evolve", "accent": "1" },
+        { "text": " too." }
+      ]
+    },
+    "body": {
+      "parts": [
+        { "text": "Improve your business " },
+        { "text": "performance", "accent": "1" },
+        { "text": " with the help of " },
+        { "text": "AI", "accent": "1" },
+        { "text": " !LET'S WORK TOGETHER!" }
+      ]
+    },
+    "cta": "Contact me"
+  },
+  "hook": {
+    "aria": "Hook section",
+    "text": {
+      "parts": [
+        { "text": "Work with us with " },
+        { "text": "different payment methods", "accent": "1" },
+        { "text": " for our variety of services." }
+      ]
+    }
+  },
+  "cta": {
+    "title": "Let's build something powerful",
+    "lead": "Ready for your next project? Message us on WhatsApp.",
+    "whatsapp": "Contact on WhatsApp"
+  },
+  "footer": {
+    "tagline": "High-end software engineering agency focused on obsidian-grade performance and architectural integrity.",
+    "sitemap": "Sitemap",
+    "legal": "Legal",
+    "connection": "Connection",
+    "link": {
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "process": "Process",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "security": "Security",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "contact": "Contact"
+    },
+    "copy": "© 2024 TechnologicalCode. Engineered for the Obsidian Pulse.",
+    "status": {
+      "server": "Server: Frankfurt-01",
+      "network": "Network: Secure"
+    }
+  }
+}

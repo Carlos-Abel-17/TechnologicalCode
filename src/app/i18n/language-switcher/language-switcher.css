@@ -4,8 +4,8 @@
   gap: 0.2rem;
   padding: 0.2rem;
   border-radius: 9999px;
-  border: 1px solid rgb(47 47 47 / 0.9);
-  background: rgb(18 18 18 / 0.6);
+  border: 1px solid var(--color-tc-lang-border);
+  background: var(--color-tc-lang-bg);
 }
 
 .lang__btn {
@@ -16,7 +16,7 @@
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.06em;
-  color: #9a9a9a;
+  color: var(--color-tc-lang-muted);
   background: transparent;
   cursor: pointer;
   transition:
@@ -25,11 +25,11 @@
 }
 
 .lang__btn:hover {
-  color: #cfcfcf;
+  color: var(--color-tc-link-hover);
 }
 
 .lang__btn--active {
-  color: #0a0a0a;
+  color: var(--color-tc-lang-active-fg);
   background: linear-gradient(135deg, #7b61ff 0%, #00d1ff 100%);
 }
 
