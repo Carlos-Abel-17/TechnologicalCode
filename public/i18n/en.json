@@ -90,7 +90,7 @@
     "showcase": {
       "title": "With modern, futuristic models",
       "subtitle": "For easier interaction",
-      "cta": "Contact me",
+      "cta": "Contact us",
       "note": "Keep your eyes on your business from anywhere",
       "collageImgAlt": "Dashboard and metrics preview"
     }
@@ -118,7 +118,7 @@
         { "text": " !LET'S WORK TOGETHER!" }
       ]
     },
-    "cta": "Contact me"
+    "cta": "Contact us"
   },
   "hook": {
     "aria": "Hook section",
