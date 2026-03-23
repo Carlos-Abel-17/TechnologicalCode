@@ -11,7 +11,6 @@ import {
 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { LanguageSwitcherComponent } from '../../i18n/language-switcher/language-switcher';
 import { HeaderZoneService } from '../header-zone.service';
 import { ThemeService } from '../../theme/theme.service';
 
@@ -20,7 +19,7 @@ const HEADER_GLASS_SCROLL_PX = 10;
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, LanguageSwitcherComponent, TranslatePipe],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
